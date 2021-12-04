@@ -6,8 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
+    // Note to Professor Albert Lam: I did not implement the provided template code for the
+    // Mobile Applications for Android Devices course since much of that code
+    // rendered errors when I used it to create the application. Consequently, I wrote the
+    // application in a simplified form as shown below.
+
+    // Create a debugging tag
+    private static String TAG = "GradeCalculator";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +64,14 @@ public class MainActivity extends AppCompatActivity {
             javaGradeValue = Integer.parseInt(javaGrade.getText().toString());
         }
 
+        // Log the user's input data
+        Log.d(TAG, "iOS Grade Value: " + iOSGradeValue + ", Android Grade Value: " + androidGradeValue + ", Swift Grade Value: " + swiftGradeValue + ", Java Grade Value: " + javaGradeValue);
+
         // Calculate the average grade
         int averageGrade = (iOSGradeValue + androidGradeValue + swiftGradeValue + javaGradeValue)/4;
+
+        // Log the average grade value
+        Log.d(TAG, "Average Grade Value: " + averageGrade);
 
         // Print the average grade to the layout
         TextView gradeOutput = (TextView)findViewById(R.id.textView7);
@@ -105,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
             javaGradeValue = Integer.parseInt(javaGrade.getText().toString());
         }
 
+        // Log the user's input data
+        Log.d(TAG, "iOS Grade Value: " + iOSGradeValue + ", Android Grade Value: " + androidGradeValue + ", Swift Grade Value: " + swiftGradeValue + ", Java Grade Value: " + javaGradeValue);
+
         // Define an array with the provided grade values
         int[] grades = {iOSGradeValue, androidGradeValue, swiftGradeValue, javaGradeValue};
 
@@ -116,6 +133,9 @@ public class MainActivity extends AppCompatActivity {
                 minimumGrade = grades[i];
             }
         }
+
+        // Log the minimum grade value
+        Log.d(TAG, "Minimum Grade Value: " + minimumGrade);
 
         // Print the minimum grade to the layout
         TextView gradeOutput = (TextView)findViewById(R.id.textView7);
@@ -163,6 +183,9 @@ public class MainActivity extends AppCompatActivity {
             javaGradeValue = Integer.parseInt(javaGrade.getText().toString());
         }
 
+        // Log the user's input data
+        Log.d(TAG, "iOS Grade Value: " + iOSGradeValue + ", Android Grade Value: " + androidGradeValue + ", Swift Grade Value: " + swiftGradeValue + ", Java Grade Value: " + javaGradeValue);
+
         // Define an array with the provided grade values
         int[] grades = {iOSGradeValue, androidGradeValue, swiftGradeValue, javaGradeValue};
 
@@ -174,6 +197,9 @@ public class MainActivity extends AppCompatActivity {
                 maximumGrade = grades[i];
             }
         }
+
+        // Log the maximum grade value
+        Log.d(TAG, "Maximum Grade Value: " + maximumGrade);
 
         // Print the minimum grade to the layout
         TextView gradeOutput = (TextView)findViewById(R.id.textView7);
