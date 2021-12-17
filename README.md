@@ -24,8 +24,13 @@
 ### Usage
 To use this applicaiton, please refer to the [Installation](#installation) section.
 
-**Screenshots**:
+**Blueprint Screenshot**:
 
+![Screen Shot 2021-12-04 at 1 01 59 AM](https://user-images.githubusercontent.com/80941606/144699519-4af0e613-9462-4e15-99f6-c12051aebdea.png)
+
+**Application Screenshots**:
+
+<img width="341" alt="Screen Shot 2021-12-03 at 6 49 10 AM" src="https://user-images.githubusercontent.com/80941606/144598154-fe869d31-3f3a-4842-9622-ab2cfd17bb86.png">
 <img width="341" alt="Screen Shot 2021-12-03 at 6 49 10 AM" src="https://user-images.githubusercontent.com/80941606/144598154-fe869d31-3f3a-4842-9622-ab2cfd17bb86.png">
 <img width="340" alt="Screen Shot 2021-12-03 at 6 49 31 AM" src="https://user-images.githubusercontent.com/80941606/144598169-f06e2b81-93b1-44bb-94dd-945d43bdc674.png">
 <img width="339" alt="Screen Shot 2021-12-03 at 6 50 04 AM" src="https://user-images.githubusercontent.com/80941606/144598177-9d6330fa-07e0-4a23-8b33-659ccee1cbd6.png">
